@@ -36,17 +36,38 @@ This project involves the creation of a comprehensive Quarterly report for a med
 - Combined and transformed the data, creating a "Full Name" column.
 - Deleted unnecessary columns and renamed remaining columns.
 
-### 2. Power BI File Update
+## Milestone 3 Achievements:
 
-https://1drv.ms/f/s!AoSrmtzOotyjcFXkjawQ5hWxm5Q?e=vY5uOA
+### Date Table:
 
-## Directory Structure
+- Created a continuous date table covering the entire time period of the data.
+- Added columns for Day of Week, Month Number, Month Name, Quarter, Year, Start of Year, Start of Quarter, Start of Month, Start of Week.
 
-Describe the directory structure of your project, especially if you've organized your files into specific folders.
+### Star Schema and Relationships:
+
+- Created relationships between tables (Orders, Products, Stores, Customers, Date) to form a star schema.
+- Set up the necessary one-to-many relationships with the correct filter directions.
+
+### Measures Table:
+
+- Created a separate table named 'Measures Table' in the data model view.
+
+### Key Measures:
+
+- Created key measures including Total Orders, Total Revenue, Total Profit, Total Customers, Total Quantity, Profit YTD, Revenue YTD.
+
+## Documentation:
+
+- Detailed steps for each task are provided in the conversation thread.
+- DAX formulas for key measures and calculated columns are included in the Power BI file.
+
+## Power BI File:
+
+- 
 
 ## Usage Instructions
 
-
+https://1drv.ms/f/s!AoSrmtzOotyjcFXkjawQ5hWxm5Q?e=lelmkp
 
 ## Author
 

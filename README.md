@@ -62,11 +62,6 @@ This project involves the creation of a comprehensive Quarterly report for a med
 - DAX formulas for key measures and calculated columns are included in the Power BI file.
 
 ## Power BI File:
-
-- 
-
-## Usage Instructions
-
 https://1drv.ms/f/s!AoSrmtzOotyjcFXkjawQ5hWxm5Q?e=lelmkp
 
 ## Author

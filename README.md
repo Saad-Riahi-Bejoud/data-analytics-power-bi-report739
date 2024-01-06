@@ -56,13 +56,57 @@ This project involves the creation of a comprehensive Quarterly report for a med
 
 - Created key measures including Total Orders, Total Revenue, Total Profit, Total Customers, Total Quantity, Profit YTD, Revenue YTD.
 
+## Milestone 4: Report Pages and Navigation
+
+In Milestone 4, we established the foundation for our report, creating four dedicated pages for specific insights and implementing a navigation system. Each page serves a unique purpose:
+
+1. **Executive Summary**
+   - High-level business overview for C-suite executives.
+   
+2. **Customer Detail**
+   - In-depth customer-related analytics and visualizations.
+   
+3. **Product Detail**
+   - Comprehensive analysis of product-related data.
+   
+4. **Stores Map**
+   - Visual representation of store performance across territories.
+
+### Screenshots
+
+
+## Milestone 5: Visual Design and Analysis
+
+In Milestone 5, we focused on creating visually appealing reports with effective analysis. Key achievements include:
+
+- **Color Theme Selection**: Implemented a cohesive color theme for consistency.
+  
+- **Card Visuals and Charts**: Utilized various visualizations for conveying essential information.
+
+- **Hierarchies**: Established date and geography hierarchies for drill-downs and filtering.
+
+### Screenshots
+
+
+## Milestone 6: Key Performance Indicators (KPIs)
+
+Milestone 6 focused on implementing Key Performance Indicators for tracking quarterly targets. Achievements include:
+
+- **KPI Creation**: Developed KPIs for Quarterly Revenue, Orders, and Profit.
+
+- **Trend Analysis**: Incorporated trend analysis with forecasting.
+
+- **Visual Placement**: Positioned KPIs strategically on the report pages.
+
+### Screenshots
+
 ## Documentation:
 
 - Detailed steps for each task are provided in the conversation thread.
 - DAX formulas for key measures and calculated columns are included in the Power BI file.
 
 ## Power BI File:
-https://1drv.ms/f/s!AoSrmtzOotyjcFXkjawQ5hWxm5Q?e=lelmkp
+https://1drv.ms/f/c/a3dca2cedc9aab84/EoSrmtzOotwggKNwAAAAAAAB72Czdp9Wrf-S8M656Kxhwg?e=VATLLv
 
 ## Author
 

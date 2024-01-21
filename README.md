@@ -99,6 +99,80 @@ Milestone 6 focused on implementing Key Performance Indicators for tracking quar
 - **Visual Placement**: Positioned KPIs strategically on the report pages.
 
 ### Screenshots
+## Milestone 7: Enhanced Visualizations and Interactivity
+
+In Milestone 7, the focus was on enhancing visualizations and interactivity, ensuring a user-friendly experience. Key achievements include:
+
+### Task 1: Enhanced Gauges
+
+- Added three gauges showcasing current-quarter performance of Orders, Revenue, and Profit against quarterly targets.
+- Implemented conditional formatting for the callout values for better visualization.
+- Created measures for quarterly targets and growth percentages.
+
+### Task 2: Executive Summary Page
+
+- Incorporated various visuals, including cards, line graphs, donut charts, and a bar chart, providing a comprehensive overview.
+- Added a date slicer to allow users to filter the page by year.
+
+### Task 3: Duplicate Visuals on Executive Summary Page
+
+- Copied and duplicated card visuals to the Executive Summary page for Total Revenue, Total Orders, and Total Profit.
+- Adjusted formatting for decimal places in the Format > Callout Value pane.
+
+### Task 4: Line Graph Configuration
+
+- Copied and modified the line graph from the Customer Detail page.
+- Set X-axis to the Date Hierarchy with specific levels displayed.
+- Configured Y-axis to Total Revenue.
+- Positioned the line chart below the cards on the Executive Summary page.
+
+### Task 5: Donut Charts for Revenue Breakdown
+
+- Added two donut charts showing Total Revenue breakdown by Store[Country] and Store[Store Type].
+- Positioned the donut charts along the top of the page.
+
+### Task 6: Bar Chart for Number of Orders
+
+- Created a bar chart showing the number of orders by product category.
+- Utilized the Total Customers by Product Category donut chart from the Customer Detail page as a starting point.
+
+### Task 7: Key Performance Indicators (KPIs)
+
+- Developed KPIs for Quarterly Revenue, Orders, and Profit.
+- Configured Trend Analysis, Direction, Bad Color, Transparency, and Callout Value formatting.
+- Duplicated and arranged KPI cards on the Executive Summary page.
+
+### Screenshots
+
+## Milestone 8: Geographic Analysis and Drillthrough Page
+
+In Milestone 8, the focus shifted towards geographical analysis and creating a drillthrough page for store-specific insights.
+
+### Task 1: Geographic Analysis
+
+- Added a map visual on the Stores Map page, showcasing store performance metrics.
+- Configured map controls, auto-zoom, and bubble size based on ProfitYTD.
+- Implemented a slicer for filtering by Stores[Country].
+
+### Task 2: Slicer Toolbar
+
+- Created a slicer toolbar with custom icons for Products[Category] and Stores[Country].
+- Utilized bookmarks for toggling between the open and closed state of the slicer toolbar.
+- Added a back button for easy navigation.
+
+### Task 3: Drillthrough Page
+
+- Created a drillthrough page named Stores Drillthrough.
+- Configured page type as Drillthrough with settings for triggering from Used as category and Drill through from to country region.
+- Added visuals for top 5 products, total orders by product category, gauges for Profit YTD against targets, and a card for the selected store.
+
+### Task 4: Custom Tooltip Page
+
+- Implemented a custom tooltip page for the map visual, showing Profit YTD against targets.
+- Copied and included the profit gauge visual on the tooltip page.
+- Assigned the tooltip page to the map visual.
+
+### Screenshots
 
 ## Documentation:
 
@@ -106,7 +180,7 @@ Milestone 6 focused on implementing Key Performance Indicators for tracking quar
 - DAX formulas for key measures and calculated columns are included in the Power BI file.
 
 ## Power BI File:
-https://1drv.ms/u/c/a3dca2cedc9aab84/ERI77m_TtmxKnoRyb_J81nkBfdSMVC5_32E2HHu8FgVuIA?e=pA9HL4
+https://1drv.ms/u/c/a3dca2cedc9aab84/ERI77m_TtmxKnoRyb_J81nkB2mzYLnIny23mxzAxgNHZVA?e=r4aur8
 
 ## Author
 

@@ -180,7 +180,36 @@ In Milestone 8, the focus shifted towards geographical analysis and creating a d
 - DAX formulas for key measures and calculated columns are included in the Power BI file.
 
 ## Power BI File:
-https://1drv.ms/u/c/a3dca2cedc9aab84/ERI77m_TtmxKnoRyb_J81nkB2mzYLnIny23mxzAxgNHZVA?e=r4aur8
+https://1drv.ms/u/c/a3dca2cedc9aab84/ERI77m_TtmxKnoRyb_J81nkB2mzYLnIny23mxzAxgNHZVA?e=itNZZ4
+
+## Milestone 10 Achievements:
+### Task 1: Database Exploration and Documentation
+
+1. Printed a list of tables in the database and saved the result to a CSV file.
+
+2. Printed a list of columns in the "orders" table and saved the result to a CSV file named "orders_columns.csv". Repeated this process for other tables in the database.
+
+### Task 2: SQL Queries and Export to CSV
+
+1. **Question 1:** How many staff are there in all of the UK stores?
+   - SQL Query: See `question_1.sql`
+   - Export Result: Saved to `question_1.csv`
+
+2. **Question 2:** Which month in 2022 has had the highest revenue?
+   - SQL Query: See `question_2.sql`
+   - Export Result: Saved to `question_2.csv`
+
+3. **Question 3:** Which German store type had the highest revenue for 2022?
+   - SQL Query: See `question_3.sql`
+   - Export Result: Saved to `question_3.csv`
+
+4. **Question 4:** Created a view with store types, total sales, percentage of total sales, and count of orders.
+   - SQL Query: See `question_4.sql`
+   - Export Result: Saved to `question_4.csv`
+
+5. **Question 5:** Which product category generated the most profit for the "Wiltshire, UK" region in 2021?
+   - SQL Query: See `question_5.sql`
+   - Export Result: Saved to `question_5.csv`
 
 ## Author
 

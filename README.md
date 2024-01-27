@@ -72,9 +72,6 @@ In Milestone 4, we established the foundation for our report, creating four dedi
 4. **Stores Map**
    - Visual representation of store performance across territories.
 
-### Screenshots
-
-
 ## Milestone 5: Visual Design and Analysis
 
 In Milestone 5, we focused on creating visually appealing reports with effective analysis. Key achievements include:
@@ -84,9 +81,6 @@ In Milestone 5, we focused on creating visually appealing reports with effective
 - **Card Visuals and Charts**: Utilized various visualizations for conveying essential information.
 
 - **Hierarchies**: Established date and geography hierarchies for drill-downs and filtering.
-
-### Screenshots
-
 
 ## Milestone 6: Key Performance Indicators (KPIs)
 
@@ -98,7 +92,6 @@ Milestone 6 focused on implementing Key Performance Indicators for tracking quar
 
 - **Visual Placement**: Positioned KPIs strategically on the report pages.
 
-### Screenshots
 ## Milestone 7: Enhanced Visualizations and Interactivity
 
 In Milestone 7, the focus was on enhancing visualizations and interactivity, ensuring a user-friendly experience. Key achievements include:
@@ -142,8 +135,6 @@ In Milestone 7, the focus was on enhancing visualizations and interactivity, ens
 - Configured Trend Analysis, Direction, Bad Color, Transparency, and Callout Value formatting.
 - Duplicated and arranged KPI cards on the Executive Summary page.
 
-### Screenshots
-
 ## Milestone 8: Geographic Analysis and Drillthrough Page
 
 In Milestone 8, the focus shifted towards geographical analysis and creating a drillthrough page for store-specific insights.
@@ -172,15 +163,13 @@ In Milestone 8, the focus shifted towards geographical analysis and creating a d
 - Copied and included the profit gauge visual on the tooltip page.
 - Assigned the tooltip page to the map visual.
 
-### Screenshots
-
 ## Documentation:
 
 - Detailed steps for each task are provided in the conversation thread.
 - DAX formulas for key measures and calculated columns are included in the Power BI file.
 
 ## Power BI File:
-https://1drv.ms/u/c/a3dca2cedc9aab84/ERI77m_TtmxKnoRyb_J81nkB2mzYLnIny23mxzAxgNHZVA?e=itNZZ4
+https://1drv.ms/u/c/a3dca2cedc9aab84/ERI77m_TtmxKnoRyb_J81nkB2mzYLnIny23mxzAxgNHZVA?e=FCHU93
 
 ## Milestone 10 Achievements:
 ### Task 1: Database Exploration and Documentation

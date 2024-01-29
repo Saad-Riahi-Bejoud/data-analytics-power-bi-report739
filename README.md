@@ -56,6 +56,9 @@ This project involves the creation of a comprehensive Quarterly report for a med
 
 - Created key measures including Total Orders, Total Revenue, Total Profit, Total Customers, Total Quantity, Profit YTD, Revenue YTD.
 
+
+![Screenshot 1](images/measures.1.PNG)
+
 ## Milestone 4: Report Pages and Navigation
 
 In Milestone 4, we established the foundation for our report, creating four dedicated pages for specific insights and implementing a navigation system. Each page serves a unique purpose:
@@ -82,6 +85,10 @@ In Milestone 5, we focused on creating visually appealing reports with effective
 
 - **Hierarchies**: Established date and geography hierarchies for drill-downs and filtering.
 
+The following image shows the customer detail page at this point:
+
+![Screenshot 1](images/CUSTA.PNG)
+
 ## Milestone 6: Key Performance Indicators (KPIs)
 
 Milestone 6 focused on implementing Key Performance Indicators for tracking quarterly targets. Achievements include:
@@ -91,6 +98,10 @@ Milestone 6 focused on implementing Key Performance Indicators for tracking quar
 - **Trend Analysis**: Incorporated trend analysis with forecasting.
 
 - **Visual Placement**: Positioned KPIs strategically on the report pages.
+
+The following image shows the executive summary page at this point:
+
+![Screenshot 1](images/EXEC.PNG)
 
 ## Milestone 7: Enhanced Visualizations and Interactivity
 
@@ -135,6 +146,10 @@ In Milestone 7, the focus was on enhancing visualizations and interactivity, ens
 - Configured Trend Analysis, Direction, Bad Color, Transparency, and Callout Value formatting.
 - Duplicated and arranged KPI cards on the Executive Summary page.
 
+The following image shows the product detail page at this point:
+
+![Screenshot 1](images/PROD.PNG)
+
 ## Milestone 8: Geographic Analysis and Drillthrough Page
 
 In Milestone 8, the focus shifted towards geographical analysis and creating a drillthrough page for store-specific insights.
@@ -162,6 +177,10 @@ In Milestone 8, the focus shifted towards geographical analysis and creating a d
 - Implemented a custom tooltip page for the map visual, showing Profit YTD against targets.
 - Copied and included the profit gauge visual on the tooltip page.
 - Assigned the tooltip page to the map visual.
+
+The following image shows the stores map page at this point:
+
+![Screenshot 1](images/STOR.PNG)
 
 ## Documentation:
 

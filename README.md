@@ -50,14 +50,37 @@ This project involves the creation of a comprehensive Quarterly report for a med
 
 ### Measures Table:
 
-- Created a separate table named 'Measures Table' in the data model view.
+A measures table was then generated to store key measures, these included:
 
-### Key Measures:
+- Total Orders
+- Total Revenue
+- Total Profit
+- Total Customers
+- Total Quantity
+- Profit YTD
+- Revenue YTD
 
-- Created key measures including Total Orders, Total Revenue, Total Profit, Total Customers, Total Quantity, Profit YTD, Revenue YTD.
+These were generated using DAX formulas, some of which can be seen below:
+
+- Total Orders = COUNT(Orders[Order Date])
+- Total Revenue = SUMX(Orders, Orders[Product Quantity] * RELATED(Products[Sale Price]))
+- Profit YTD = CALCULATE( [Total Profit], DATESYTD(Dates[Date]) )
 
 
-![Screenshot 1](images/measures.1.PNG)
+
+ After this, the following DAX expression was used to create the Country column in the Stores table:
+
+Country = SWITCH ( [Country Code], "GB", "United Kingdom", "US", "United States", "DE", "Germany", BLANK() )
+
+Following this a Geography column was created to represent both the country and region in the country together using the following DAX formula:
+
+
+Geography = Stores[Country Region] & ", " & Stores[Country]
+
+Finally a Geography hierarchy was created with Region (continent) coming first, followed by Country, followed by the Country Region.
+
+
+![measures.1](Images/measures.1.PNG)
 
 ## Milestone 4: Report Pages and Navigation
 
@@ -77,7 +100,9 @@ In Milestone 4, we established the foundation for our report, creating four dedi
 
 ## Milestone 5: Visual Design and Analysis
 
-In Milestone 5, we focused on creating visually appealing reports with effective analysis. Key achievements include:
+In Milestone 5, we focused on creating visually appealing reports with effective analysis. 
+
+Key achievements include:
 
 - **Color Theme Selection**: Implemented a cohesive color theme for consistency.
   
@@ -85,9 +110,22 @@ In Milestone 5, we focused on creating visually appealing reports with effective
 
 - **Hierarchies**: Established date and geography hierarchies for drill-downs and filtering.
 
+To create these cards the following measures were created:
+
+
+Customer with Most Revenue = TOPN(1, VALUES('Customers'[Full Name]), [Total Revenue], DESC)
+
+
+Number of Orders by Top Customer = CALCULATE( COUNTROWS('Orders'), TOPN(1, VALUES('Customers'[User UUID]), [Total Revenue], DESC) )
+
+
+Total Revenue by Top Customer = CALCULATE( [Total Revenue], TOPN(1, VALUES('Customers'[User UUID]), [Total Revenue], DESC) )
+
+Finally a date slicer was added to allow users to filter the page by year, using the between slicer style.
+
 The following image shows the customer detail page at this point:
 
-![Screenshot 1](images/CUSTA.PNG)
+![CUSTA](images/CUSTA.PNG)
 
 ## Milestone 6: Key Performance Indicators (KPIs)
 
@@ -101,7 +139,7 @@ Milestone 6 focused on implementing Key Performance Indicators for tracking quar
 
 The following image shows the executive summary page at this point:
 
-![Screenshot 1](images/EXEC.PNG)
+![EXEC](images/EXEC.PNG)
 
 ## Milestone 7: Enhanced Visualizations and Interactivity
 
@@ -146,9 +184,44 @@ In Milestone 7, the focus was on enhancing visualizations and interactivity, ens
 - Configured Trend Analysis, Direction, Bad Color, Transparency, and Callout Value formatting.
 - Duplicated and arranged KPI cards on the Executive Summary page.
 
+To create the current quarter measures, the following DAX formula was used for the example of revenue:
+
+Current Quarter Revenue = TOTALQTD(SUMX(Orders, Orders[Product Quantity] * RELATED(Products[Sale Price])), Dates[Date])
+
+Following this, the previous quarter measures were calculated which can be seen below for the previous quarter revenue:
+
+Previous Quarter Revenue = VAR CurrentQuarterStart = MAX(Dates[Start of Quarter]) VAR 
+PreviousQuarterStart = EDATE(CurrentQuarterStart, -3) VAR 
+PreviousQuarterEnd = EDATE(CurrentQuarterStart, -1) RETURN CALCULATE([Total Revenue], Dates[Start of Quarter] = PreviousQuarterStart)
+
+Finally to create the target, for the example of revenue, the following DAX formula was used:
+
+Revenue Quarterly Target = 'Measures Table'[Previous Quarter Revenue] * 1.1
+
+This was repeated for profit and total orders to create the gauges.
+Following this, an areas chart with the x-axis set as Dates[Start of Quarter], the y-axis values set as Total Revenue and the Legend as Products[Category] was created.
+
+Following this, a table was created displaying the top 10 product descriptions by revenue (where data bars were added), showing their total orders, profit per order and total customers.
+
+Two cards were added to highlight the top product, one card gives the product description, the other its revenue. To get these values the following DAX expressions were used:
+
+
+Top Product = TOPN( 1, VALUES(Products[Description]), [Total Revenue], DESC )
+
+
+Total Revenue by Top Product = CALCULATE( [Total Revenue], TOPN(1, VALUES(Products[Description]), [Total Revenue], DESC) )
+
+After this a scatter graph was added to compare item profitaility with the total quantity ordered.
+
+The first step was adding a profit per item column to the products table using the following formula:
+
+Profit Per Item = Products[Sale Price] - Products[Cost Price]
+
+The next step involved setting the values as the product descriptions, the x-axis as the profit per item, the y-axis as the total orders and the legend as product category.
+
 The following image shows the product detail page at this point:
 
-![Screenshot 1](images/PROD.PNG)
+![PROD](images/PROD.PNG)
 
 ## Milestone 8: Geographic Analysis and Drillthrough Page
 
@@ -180,15 +253,12 @@ In Milestone 8, the focus shifted towards geographical analysis and creating a d
 
 The following image shows the stores map page at this point:
 
-![Screenshot 1](images/STOR.PNG)
+![STOR](images/STOR.PNG)
 
 ## Documentation:
 
 - Detailed steps for each task are provided in the conversation thread.
 - DAX formulas for key measures and calculated columns are included in the Power BI file.
-
-## Power BI File:
-https://1drv.ms/u/c/a3dca2cedc9aab84/ERI77m_TtmxKnoRyb_J81nkB2mzYLnIny23mxzAxgNHZVA?e=FCHU93
 
 ## Milestone 10 Achievements:
 ### Task 1: Database Exploration and Documentation

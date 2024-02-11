@@ -125,7 +125,7 @@ Finally a date slicer was added to allow users to filter the page by year, using
 
 The following image shows the customer detail page at this point:
 
-![custa](images/CUSTA.PNG)
+![custa](Images/CUSTA.PNG)
 
 ## Milestone 6: Key Performance Indicators (KPIs)
 
@@ -139,7 +139,7 @@ Milestone 6 focused on implementing Key Performance Indicators for tracking quar
 
 The following image shows the executive summary page at this point:
 
-![exec](images/EXEC.PNG)
+![exec](Images/EXEC.PNG)
 
 ## Milestone 7: Enhanced Visualizations and Interactivity
 
@@ -221,7 +221,7 @@ The next step involved setting the values as the product descriptions, the x-axi
 
 The following image shows the product detail page at this point:
 
-![prod](images/PROD.PNG)
+![prod](Images/PROD.PNG)
 
 ## Milestone 8: Geographic Analysis and Drillthrough Page
 
@@ -253,7 +253,7 @@ In Milestone 8, the focus shifted towards geographical analysis and creating a d
 
 The following image shows the stores map page at this point:
 
-![stor](images/STOR.PNG)
+![stor](Images/STOR.PNG)
 
 ## Documentation:
 
